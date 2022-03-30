@@ -1,14 +1,14 @@
 package app
 
 import (
-	"belajar-golang-restful-api/helper"
+	"belajar-golang-dependency-injection/helper"
 	"database/sql"
 	"log"
 	"os"
 	"time"
 
-	"github.com/joho/godotenv"
 	_ "github.com/go-sql-driver/mysql"
+	"github.com/joho/godotenv"
 )
 
 func NewDB() *sql.DB {

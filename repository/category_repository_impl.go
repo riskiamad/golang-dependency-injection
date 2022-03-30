@@ -1,8 +1,8 @@
 package repository
 
 import (
-	"belajar-golang-restful-api/helper"
-	"belajar-golang-restful-api/model/domain"
+	"belajar-golang-dependency-injection/helper"
+	"belajar-golang-dependency-injection/model/domain"
 	"context"
 	"database/sql"
 	"errors"
@@ -11,7 +11,7 @@ import (
 type CategoryRepositoryImpl struct {
 }
 
-func NewCategoryRepository() CategoryRepository {
+func NewCategoryRepository() *CategoryRepositoryImpl {
 	return &CategoryRepositoryImpl{}
 }
 
